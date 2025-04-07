@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meta News Portal</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0d0d0d;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #1a1a1a;
+      color: #fff;
+      transition: background 0.3s;
+    }
+
+    .buttons button:hover {
+      background: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Meta News</h1>
+  <p>Get the latest trending updates from top sources</p>
+
+  <div class="buttons">
+    <button onclick="redirectTo('https://cointelegraph.com')">Crypto News</button>
+    <button onclick="redirectTo('https://techcrunch.com')">Tech Buzz</button>
+    <button onclick="redirectTo('https://www.cnbc.com/markets/')">Market Updates</button>
+  </div>
+
+  <script>
+    function redirectTo(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
